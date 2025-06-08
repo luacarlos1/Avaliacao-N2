@@ -14,7 +14,7 @@ export default function PostList() {
 
   return (
     <Container>
-      <Typography variant="h4" gutterBottom>Lista de Posts</Typography>
+      <Typography variant="h4" gutterBottom>Lista de Publicações</Typography>
       <Grid container spacing={2}>
         {posts.map(post => (
           <Grid item xs={12} md={6} key={post.id}>

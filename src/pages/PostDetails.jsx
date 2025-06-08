@@ -13,14 +13,15 @@ export default function PostDetails() {
       .catch(error => console.error(error));
   }, [id]);
 
-  if (!post) return <Typography>Carregando...</Typography>;
+  if (!post) return <Typography>Carregando publicação...</Typography>;
 
   return (
     <Container>
       <Card>
         <CardContent>
-          <Typography variant="h4" gutterBottom>{post.title}</Typography>
-          <Typography>{post.body}</Typography>
+          <Typography variant="h4" gutterBottom>Título: {post.title}</Typography>
+          <Typography>Conteúdo: {post.body}</Typography>
+
         </CardContent>
       </Card>
     </Container>
